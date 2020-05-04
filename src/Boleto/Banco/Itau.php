@@ -14,7 +14,7 @@ class Itau extends AbstractBoleto implements BoletoContract
      *
      * @var string
      */
-    protected $localPagamento = 'Até o vencimento, preferencialmente no Itaú';
+    protected $localPagamento = 'Em qualquer banco ou correspondente não bancário';
 
     /**
      * Código do banco
