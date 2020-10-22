@@ -1221,7 +1221,7 @@ abstract class AbstractBoleto implements BoletoContract
      */
     public function getLogo()
     {
-        return $this->logo ? $this->logo : "http://dummyimage.com/300x70/f5/0.png&text=Sem+Logo";
+        return $this->logo ? $this->logo : "https://clickspacebr.s3-us-west-2.amazonaws.com/production/pagclick/default_logo.png";
     }
 
     /**
