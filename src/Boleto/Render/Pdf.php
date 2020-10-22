@@ -192,7 +192,7 @@ class Pdf extends AbstractPdf implements PdfContract
         $this->SetFont($this->PadraoFont, '', $this->fdes);
         $this->Cell(0, $this->desc, $this->_('Pagador'), 'TLR', 1);
 
-        $this->Image($this->pagclickLogo, 168, ($this->GetY()+2.5), 0, 0, 'png', $this->pagclickUrl);
+//        $this->Image($this->pagclickLogo, 168, ($this->GetY()+2.5), 0, 0, 'png', $this->pagclickUrl);
 
         $this->SetFont($this->PadraoFont, 'B', $this->fcel);
         $this->Cell(0, $this->cell, $this->_($this->boleto[$i]->getPagador()->getNomeDocumento()), 'LR', 1);
@@ -350,7 +350,7 @@ class Pdf extends AbstractPdf implements PdfContract
         $this->Cell(120, $this->cell, $this->_(''), 'BLR');
         $this->Cell(50, $this->cell, $this->_(''), 'BR', 1);
 
-        $this->Image($this->pagclickLogo, 168, ($this->GetY()+5.5), 0, 0, 'png', $this->pagclickUrl);
+//        $this->Image($this->pagclickLogo, 168, ($this->GetY()+5.5), 0, 0, 'png', $this->pagclickUrl);
 
         $this->SetFont($this->PadraoFont, '', $this->fdes);
         $this->Cell(0, $this->desc, $this->_('Pagador'), 'LR', 1);
